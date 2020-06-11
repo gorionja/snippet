@@ -1,0 +1,62 @@
+{
+	"editor.renderWhitespace": "all",
+	"editor.insertSpaces": false,
+	"workbench.tree.indent": 4,
+	"[python]": {
+		"editor.detectIndentation": false,
+		"editor.tabSize": 4
+	},
+	"extensions.ignoreRecommendations": true,
+	"breadcrumbs.enabled": true,
+	"workbench.startupEditor": "newUntitledFile",
+	"window.zoomLevel": 0,
+	"explorer.confirmDelete": false,
+	"terminal.integrated.rendererType": "dom",
+	"workbench.colorTheme": "Visual Studio Dark",
+	"vsicons.dontShowNewVersionMessage": true,
+	"vim.insertModeKeyBindings": [
+	{
+			"before": ["j","j"],
+			"after": ["<Esc>"]
+		}
+	],
+	"vim.leader": "<space>",
+	// Normalモードのキーバインド設定
+	"vim.normalModeKeyBindingsNonRecursive": [
+		// Spaceキーをリーダーとしてバインド機能を設定する
+		{
+			"before": ["<leader>","w"],
+			"after": [],
+			"commands": [
+				{
+					"command": "workbench.action.files.save",
+					"args": []
+				}
+			]
+		},
+		{
+			"before": ["<C-k>"],
+			"after": ["g","b"]
+		}
+	],
+	"vim.visualModeKeyBindings": [
+		{
+			"before": ["<C-k>"],
+			"after": ["g","b"]
+		}
+	],
+	"vim.useSystemClipboard": true,
+	"editor.suggestSelection": "first",
+	"vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+	"python.jediEnabled": false,
+	"editor.codeActionsOnSave": null,
+	"explorer.confirmDragAndDrop": false,
+	// fonts
+	"editor.fontSize": 11,
+	"terminal.integrated.fontSize": 11,
+	// wrap
+	"editor.wordWrap": "off",
+	"files.trimTrailingWhitespace": true,
+	// minimap
+	"editor.minimap.enabled": false,
+}
