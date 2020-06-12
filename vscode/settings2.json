@@ -1,0 +1,68 @@
+{
+    /* 基本設定 */
+    "editor.fontSize": 12, // エディター文字サイズ
+    "debug.console.fontSize": 16, // コンソール文字サイズ
+    "terminal.integrated.fontSize": 16, // ターミナル文字サイズ
+    "terminal.integrated.copyOnSelection": true, // 設定した場合、ターミナルで選択しているテキストはクリップボードにコピーされます。
+    "editor.formatOnPaste": true, // ペースト時自動フォーマット
+    "editor.formatOnSave": false, // 保存時自動フォーマット 時間のかかるフォーマットだとバグが出るらしい
+    "editor.formatOnType": true, // 入力時自動フォーマット
+    "editor.insertSpaces": true, // tab キーを押すとスペースが挿入されます
+    "editor.tabSize": 4, // タブ文字数
+    "editor.hover.enabled": false, // ホバー時メッセージ表示
+    "editor.renderControlCharacters": true, // 制御文字表示
+    "editor.renderLineHighlight": "all", // 選択行の行番号ハイライト
+    "breadcrumbs.enabled": true, //エディターで開くパンくずの設定
+    "editor.renderWhitespace": "boundary", // ホワイトスペース（半角スペース等）の表示
+    "editor.minimap.enabled": false, // ミニマップはいらない
+    // "editor.minimap.renderCharacters": false, // ミニマップの文字をブロック表示
+    // "editor.minimap.showSlider": "always", // ミニマップ表示領域をハイライト
+    "files.insertFinalNewline": true, // 保存時に末尾を空行にする
+    "files.trimFinalNewlines": true, // 保存時に最終行以降を削除
+    "files.trimTrailingWhitespace": true, // 保存時に行末のホワイトスペースを削除
+    "window.zoomLevel": 0, // 画面全体の表示サイズ
+    "window.title": "${dirty}${activeEditorMedium}${separator}${rootName}", // フルパス表示
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue", // サジェスト一覧の初期表示項目設定
+    "files.autoGuessEncoding": false, // 文字コード自動判別（ワークスペースで文字コード設定する）
+    "bookmarks.treeview.visible": true, //bookmarkをsidebarに表示する
+    "files.associations": { // ファイルと言語の関連付けを変更
+    },
+    "files.exclude": { // 非表示にするファイル
+        "**/.DS_Store": true
+    },
+    "search.exclude": { // 検索結果から除外するファイル
+        "**/tmp/cache": true,
+        "**/.svn": true,
+        "**/.git": true,
+    },
+    /* vim */
+    "vim.easymotion": true,
+    "vim.handleKeys": {
+        "<C-a>": false,
+        "<C-f>": false,
+        "<C-y>": false,
+    },
+    "vim.insertModeKeyBindings": [
+        {
+            "before": [
+                "j",
+                "k"
+            ],
+            "after": [
+                "<esc>"
+            ]
+        },
+    ],
+    "vim.hlsearch": true, // hlsearchは必要だと思う
+    "vim.visualstar": true, // wordを* or + で検索する
+    "vim.leader": "<space>", // leader をスペースに
+    "vim.useCtrlKeys": true, // コントロールキーのバインドを有効
+    "vim.useSystemClipboard": true, // システムのクリップボードを使用する
+
+    /* git */
+    "git.autofetch": true,
+    /* python */
+    "python.jediEnabled": false,
+    "editor.suggestSelection": "first",
+
+}
